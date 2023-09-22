@@ -1,4 +1,30 @@
 package domain.model;
 
 public class Triangle extends Shape{
+    private int sideSize1=0;
+    private int sideSize2=0;
+    private int sideSize3=0;
+
+    public int getSideSize1(){
+        return  sideSize1;
+    }
+    public void setSideSize1(int newSideSize1){
+        if (newSideSize1 >= 0)
+            sideSize1 = newSideSize1;
+    }
+    public int getSideSize2(){
+        return  sideSize2;
+    }
+    public void setSideSize2(int newSideSize2){
+        if (newSideSize2 >= 0)
+            sideSize2 = newSideSize2;
+    }
+    public int getSideSize3(){
+        return  sideSize3;
+    }
+    public void setSideSize3(int newSideSize3){
+        if (newSideSize3 >= 0)
+            sideSize3 = newSideSize3;
+    }
+
 }

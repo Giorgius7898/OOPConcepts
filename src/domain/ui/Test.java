@@ -6,10 +6,12 @@ import domain.model.Rect;
 
 public class Test {
     public static void main(String[] args) {
-        var Square = new Rect();
-        Rect.setWidth(65);
-        System.out.println("Width: "+Rect.getWidth());
-        System.out.println("Height: "+Rect.getHeight());
-        Rect.setHeight(21);
+        var rect = new Rect();
+        rect.setWidth(65);
+        System.out.println("Width: "+rect.getWidth());
+        System.out.println("Height: "+rect.getHeight());
+        rect.setHeight(21);
+        System.out.println("Width: "+rect.getWidth());
+        System.out.println("Height: "+rect.getHeight());
     }
 }
