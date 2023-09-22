@@ -1,13 +1,15 @@
 package domain.ui;
 
 import domain.model.Shape;
+import domain.model.Square;
+import domain.model.Rect;
 
 public class Test {
     public static void main(String[] args) {
-        var shape1 = new Shape(-200,10);
-        var shape2 = new Shape(20,1500);
-
-        System.out.println(shape1.getX());
-
+        var Square = new Rect();
+        Rect.setWidth(65);
+        System.out.println("Width: "+Rect.getWidth());
+        System.out.println("Height: "+Rect.getHeight());
+        Rect.setHeight(21);
     }
 }
