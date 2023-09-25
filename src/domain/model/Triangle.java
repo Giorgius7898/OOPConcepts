@@ -26,5 +26,14 @@ public class Triangle extends Shape{
         if (newSideSize3 >= 0)
             sideSize3 = newSideSize3;
     }
+    @Override
+    public int getArea(){
+        double semiperimetro = (getSideSize1() + getSideSize2() + getSideSize3()) / 2.0;
+        return (int) Math.sqrt(semiperimetro * (semiperimetro - getSideSize1()) * (semiperimetro - getSideSize2()) * (semiperimetro - getSideSize3()));
+    }
+    @Override
+    public int getPerimeter(){
+        return (int) (getSideSize1() + getSideSize2() + getSideSize3());
+    }
 
 }

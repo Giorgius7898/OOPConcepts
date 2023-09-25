@@ -11,4 +11,11 @@ public class Rect extends Square{
         if (newHeight >= 0)
             height = newHeight;
     }
+    public int getArea(){
+        return getWidth()*getHeight();
+    }
+    @Override
+    public int getPerimeter(){
+        return 2*(getWidth()*getHeight());
+    }
 }

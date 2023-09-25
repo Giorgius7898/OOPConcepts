@@ -11,10 +11,10 @@ public class Circle extends Shape{
     }
     @Override
     public int getArea(){
-        return pi*(getRadius());
+        return (int) (Math.PI*(getRadius()*getRadius()));
     }
     @Override
     public int getPerimeter(){
-        return 4*getWidth();
+        return (int) (2 * Math.PI * getRadius());
     }
 }

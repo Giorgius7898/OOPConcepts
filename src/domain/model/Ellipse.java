@@ -9,4 +9,13 @@ public class Ellipse extends Circle{
         if (newRadius2 >= 0)
             radius2 = newRadius2;
     }
+    @Override
+    public int getArea(){
+        return (int) (Math.PI*getRadius()*getRadius2());
+    }
+    @Override
+    public int getPerimeter(){
+        return (int) (2 * Math.PI * Math.sqrt((double) (getRadius() * getRadius() + getRadius2() * getRadius2()) / 2));
+
+    }
 }
