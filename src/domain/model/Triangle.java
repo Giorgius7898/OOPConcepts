@@ -36,4 +36,5 @@ public class Triangle extends Shape{
         return (int) (getSideSize1() + getSideSize2() + getSideSize3());
     }
 
+
 }

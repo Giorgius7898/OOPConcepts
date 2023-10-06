@@ -15,6 +15,14 @@ public class Circle extends Shape{
     }
     @Override
     public int getPerimeter(){
+
         return (int) (2 * Math.PI * getRadius());
+    }
+    public Circle(int newX, int newY, int newRadius){
+        super(newX, newY);
+        setRadius(newRadius);
+    }
+    public Circle(int newRadius){
+        this(0,0,newRadius );
     }
 }
